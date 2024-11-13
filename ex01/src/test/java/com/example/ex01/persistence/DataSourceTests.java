@@ -32,7 +32,7 @@ public class DataSourceTests {
 		try
 		(
 			SqlSession sqlSession = sqlSessionFactory.openSession(true); // �삤�넗 而ㅻ컠�씠 �맂�떎.(�옄�룞而ㅻ컠)
-			Connection connection = sqlSession.getConnection(); // 而ㅻ꽖�뀡 留뚮뱾湲�
+			Connection connection = sqlSession.getConnection(); // 而dfsㅻ꽖�뀡 留뚮뱾湲�
 		){
 			log.info(sqlSession);
 			log.info(connection);
