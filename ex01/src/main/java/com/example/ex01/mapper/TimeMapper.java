@@ -25,4 +25,9 @@ public interface TimeMapper {
 	public String getTime();
 	
 	
+	// xml에 붙어 있는 파일 가지고 오기
+	// 메소드의 이름과 xml 쿼리 이름과 동일하게 맞추기
+	public String getTime2();
+	
+	
 }
