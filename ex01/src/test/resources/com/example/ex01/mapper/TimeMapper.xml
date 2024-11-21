@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.ex01.mapper.TimeMapper">
+
+<!-- id 인터페이스와 동일하게 구현되는 메소드 이름을 동일하게 가져온다 / resultType 쿼리를 실행했을 때 반환되는 자료형 타입 -->
+<select id="getTime2" resultType="String">
+SELECT now()
+</select>
+
+</mapper>

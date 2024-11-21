@@ -21,6 +21,10 @@ public class TimeMapperTest {
 	@Test
 	public void testGetTime() {
 		log.info(timeMapper.getClass().getName()); // timeMapper가 주입이 되었는지 확인
-		log.info(timeMapper.getTime());
+		log.info("timeMapper.getTime ==>"+timeMapper.getTime());
+		
+		
+		log.info("----------------------");
+		log.info("timeMapper.getTime2 ==>"+timeMapper.getTime2());
 	}
 }

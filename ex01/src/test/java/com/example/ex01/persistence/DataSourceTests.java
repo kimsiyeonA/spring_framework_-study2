@@ -24,15 +24,15 @@ public class DataSourceTests {
 	//@Autowired
 	//private DataSource dataSource;
 	
-	@Autowired //root-context.xml에서 만든 것
+	@Autowired //root-context.xml�뿉�꽌 留뚮뱺 寃� 테스트
 	private SqlSessionFactory sqlSessionFactory;
 	
 	@Test
 	public void testConnection() {
 		try
 		(
-			SqlSession sqlSession = sqlSessionFactory.openSession(true); // 오토 커밋이 된다.(자동커밋)
-			Connection connection = sqlSession.getConnection(); // 커넥션 만들기
+			SqlSession sqlSession = sqlSessionFactory.openSession(true); // �삤�넗 而ㅻ컠�씠 �맂�떎.(�옄�룞而ㅻ컠)
+			Connection connection = sqlSession.getConnection(); // 而dfsㅻ꽖�뀡 留뚮뱾湲�
 		){
 			log.info(sqlSession);
 			log.info(connection);
